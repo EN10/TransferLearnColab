@@ -1,6 +1,11 @@
 # TFHubRetrain
 
-Based on Tensoflow [Retrain](https://www.tensorflow.org/versions/master/tutorials/image_retraining)
+Retraining one of Google's CNN image classification models to new categories using Transfer Learning.
+This can be an much faster (in a few minutes) than training from scratch ([Inception V3](https://github.com/EN10/KerasInception) took Google, 2 weeks).
+
+* Based on Tensoflow [Retrain](https://www.tensorflow.org/versions/master/tutorials/image_retraining) (updated 30 March)    
+* Originally based on [Tensorflow for Poets](https://github.com/EN10/TensorFlowForPoets)
+
 
 ## Install 
     pip install "tensorflow>=1.7.0"

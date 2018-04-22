@@ -23,7 +23,9 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 
 ## Retrain
     python retrain.py --image_dir ~/flower_photos
-    
+
+* [Speedup Training](https://github.com/EN10/TensorFlowForPoets#speedup-training)
+
 ## Classify
     curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
     

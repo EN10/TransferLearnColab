@@ -24,6 +24,8 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 ## Retrain
     python retrain.py --image_dir ~/flower_photos
 
+519s on	Tesla K80 and python2.7
+
 * [Speedup Training](https://github.com/EN10/TensorFlowForPoets#speedup-training)
 
 ## Classify

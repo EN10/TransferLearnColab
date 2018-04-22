@@ -23,3 +23,10 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 
 ## Retrain
     python retrain.py --image_dir ~/flower_photos
+    
+## Classify
+    curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
+    
+    python label_image.py \
+    --graph=/tmp/output_graph.pb  \
+    --image=image.jpg

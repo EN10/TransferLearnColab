@@ -33,6 +33,7 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 
 * [MobileNetV2](https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html)
 * [Speedup Training](https://github.com/EN10/TensorFlowForPoets#speedup-training)
+* [Compare Models](https://github.com/tensorflow/models/blob/master/research/slim/README.md)
  
 ## Classify
     curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py

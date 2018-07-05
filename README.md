@@ -24,15 +24,23 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 ## Retrain
     python retrain.py --image_dir ~/flower_photos
 
-519s on	Tesla K80 and python2.7
+519s on	Tesla K80 and python2.7 (InceptionV3)
 
-## Faster Retrain
+## Speedup Training 
+reduce the number of images by ~70%    
+
+    ls flower_photos/roses | wc -l
+    rm flower_photos/*/[3-9]*
+also only use 2 flowers e.g. roses and sunflowers  
+
+    rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
+
+## Lighter Model
     python retrain.py \
     --image_dir ~/flower_photos \
     --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/2
 
 * [MobileNetV2](https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html)
-* [Speedup Training](https://github.com/EN10/TensorFlowForPoets#speedup-training)
 * [Compare Models](https://github.com/tensorflow/models/blob/master/research/slim/README.md)
 
 Default 4000 steps. 11m22 PaizaCloud

@@ -45,3 +45,7 @@ Default 4000 steps. 11m22 PaizaCloud
     python label_image.py \
     --graph=/tmp/output_graph.pb  \
     --image=image.jpg
+    
+## Config
+
+bottlenecks, graph & model in `/tmp`

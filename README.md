@@ -46,6 +46,6 @@ Default 4000 steps. 11m22 PaizaCloud
     --graph=/tmp/output_graph.pb  \
     --image=image.jpg
     
-## Config
+## tmp
 
 bottlenecks, graph & model in `/tmp`

@@ -39,6 +39,8 @@ Default 4000 steps. 11m22 PaizaCloud
 
     --how_many_training_steps 500
 
+Colab, GPU, 2 Flowers, [0-2], 75s
+
 ## Classify
     curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
     

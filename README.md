@@ -37,6 +37,8 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 
 Default 4000 steps. 11m22 PaizaCloud
 
+    --how_many_training_steps 500
+
 ## Classify
     curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
     

@@ -26,8 +26,14 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 
 519s on	Tesla K80 and python2.7
 
-* [Speedup Training](https://github.com/EN10/TensorFlowForPoets#speedup-training)
+## Faster Retrain
+    python retrain.py \
+    --image_dir ~/flower_photos \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/2
 
+* [MobileNetV2](https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html)
+* [Speedup Training](https://github.com/EN10/TensorFlowForPoets#speedup-training)
+ 
 ## Classify
     curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
     

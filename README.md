@@ -28,7 +28,8 @@ Not Needed on Colab:
     python retrain.py --image_dir ~/flower_photos
 
 692s : Colab - Python 3 - GPU - 3618 images - 4000 Steps    
-500s : Colab - Python 3 - GPU - 591 images - 4000 Steps
+500s : Colab - Python 3 - GPU - 591 images - 4000 Steps     
+131s : Colab - Python 3 - GPU - 591 images - 500 Steps
 
 ## Speedup Training 
 reduce the number of images by ~70% : 3681 -> 1668

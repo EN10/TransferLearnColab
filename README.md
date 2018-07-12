@@ -46,7 +46,7 @@ also only use 2 flowers e.g. roses and sunflowers
 * [MobileNetV2](https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html)
 * [Compare Models](https://github.com/tensorflow/models/blob/master/research/slim/README.md)
 
-Default 4000 steps. 11m22 PaizaCloud
+Default 4000 steps. 11m22 PaizaCloud    Colab GPU ~ 333s
 
     --how_many_training_steps 500
 

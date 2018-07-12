@@ -6,6 +6,8 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 * Based on [Tensoflow Hub Retrain](https://github.com/tensorflow/hub/blob/master/docs/tutorials/image_retraining.md) (updated 21 June)    
 * Originally based on [Tensorflow for Poets](https://github.com/EN10/TensorFlowForPoets)
 
+Colab - Runtime - Change runtime type - Hardware accelerator - GPU - SAVE
+
 ## Install
 Not Needed on Colab:    
 

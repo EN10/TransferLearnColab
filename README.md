@@ -71,7 +71,7 @@ Loads images on screen, in Google Images Scroll for more images.
 
 Zip: right click - Send to - Compressed (zipped) folder
 
-#### Upload
+#### Colab Upload
 
     from google.colab import files
 

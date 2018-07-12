@@ -24,12 +24,19 @@ Not Needed on Colab:
     !cd ~/example_code
     !curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
 
-## Retrain (Slow)
+## Retrain
     python retrain.py --image_dir ~/flower_photos
 
+    --how_many_training_steps 500
+    
 692s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 90.4%    
 500s : Colab - Python 3 - GPU - 591 images - 4000 Steps - Test 96.9%    
 131s : Colab - Python 3 - GPU - 591 images - 500 Steps - Test 96.9%
+
+11m22 : PaizaCloud
+
+* [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
+* [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
 
 ## Speedup Training 
 reduce the number of images by ~70% : 3681 -> 1668
@@ -39,21 +46,6 @@ reduce the number of images by ~70% : 3681 -> 1668
 also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
 
     rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
-
-## Lighter Model (Faster)
-    !python retrain.py \
-    --image_dir ~/flower_photos \
-    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/2
-
-* [MobileNetV2](https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html)
-* [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
-* [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
-
-Default 4000 steps. PaizaCloud 11m22 - Colab GPU ~ 344s
-
-    --how_many_training_steps 500
-
-Colab, K80 GPU, 2 Flowers, [0-2], 75s
 
 ## Download Classify File
     !curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
@@ -69,16 +61,17 @@ Colab, K80 GPU, 2 Flowers, [0-2], 75s
     --input_height=224 --input_width=224 \
     --image=red-rose-500x500.jpg
 
-### [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
+## [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
 
 images to colab: download images, rename folder, zip, upload, unzip, mkdir, mv   
 
+#### Images
 [Batch Image downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)    
 Loads images on screen, in Google Images Scroll for more images.
 
 Zip: right click - Send to - Compressed (zipped) folder
 
-#### Upload Code
+#### Upload
 
     from google.colab import files
 

@@ -63,7 +63,9 @@ Colab, K80 GPU, 2 Flowers, [0-2], 75s
     --output_layer=final_result \
     --input_height=224 --input_width=224 \
     --image=red-rose-500x500.jpg
-    
+
+#### [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
+
 ## tmp
 
 bottlenecks, graph & model in `/tmp`

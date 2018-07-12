@@ -70,6 +70,8 @@ Colab, K80 GPU, 2 Flowers, [0-2], 75s
 
 images to colab: zip then upload
 
+### Upload Code
+
     from google.colab import files
 
     uploaded = files.upload()

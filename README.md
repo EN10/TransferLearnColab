@@ -44,7 +44,8 @@ also only use 2 flowers e.g. roses and sunflowers
     --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/2
 
 * [MobileNetV2](https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html)
-* [Compare Models](https://github.com/tensorflow/models/blob/master/research/slim/README.md)
+* [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
+* [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
 
 Default 4000 steps. PaizaCloud 11m22 - Colab GPU ~ 344s
 

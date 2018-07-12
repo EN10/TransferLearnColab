@@ -53,13 +53,16 @@ Colab, K80 GPU, 2 Flowers, [0-2], 75s
 ## Download Classify File
     !curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
 
-# Run Classification
+## Download Test Image
+    !wget https://5.imimg.com/data5/AA/KK/MY-6677193/red-rose-500x500.jpg
+
+## Run Classification
     !python label_image.py \
     --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt \
     --input_layer=Placeholder \
     --output_layer=final_result \
     --input_height=224 --input_width=224 \
-    --image=image.jpg
+    --image=red-rose-500x500.jpg
     
 ## tmp
 

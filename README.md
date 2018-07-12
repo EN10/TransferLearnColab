@@ -68,6 +68,16 @@ Colab, K80 GPU, 2 Flowers, [0-2], 75s
 
 #### [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
 
+images to colab: zip then upload
+
+    from google.colab import files
+
+    uploaded = files.upload()
+
+    for fn in uploaded.keys():
+      print('User uploaded file "{name}" with length {length} bytes'.format(
+          name=fn, length=len(uploaded[fn])))
+
 ## tmp
 
 bottlenecks, graph & model in `/tmp`

@@ -27,7 +27,7 @@ Not Needed on Colab:
 ## Retrain (Slow)
     python retrain.py --image_dir ~/flower_photos
 
-692s : Colab - Python 3 - GPU - 3681 images - 4000 Steps    
+692s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 90.4%    
 500s : Colab - Python 3 - GPU - 591 images - 4000 Steps - Test 96.9%    
 131s : Colab - Python 3 - GPU - 591 images - 500 Steps - Test 96.9%
 

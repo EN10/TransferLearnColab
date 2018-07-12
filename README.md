@@ -66,11 +66,16 @@ Colab, K80 GPU, 2 Flowers, [0-2], 75s
     --input_height=224 --input_width=224 \
     --image=red-rose-500x500.jpg
 
-#### [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
+### [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
 
-images to colab: zip then upload
+images to colab: download images, rename folder, zip, upload, unzip, mkdir, mv   
 
-### Upload Code
+[Batch Image downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)    
+Loads images on screen, in Google Images Scroll for more images.
+
+Zip: right click - Send to - Compressed (zipped) folder
+
+#### Upload Code
 
     from google.colab import files
 
@@ -79,6 +84,17 @@ images to colab: zip then upload
     for fn in uploaded.keys():
       print('User uploaded file "{name}" with length {length} bytes'.format(
           name=fn, length=len(uploaded[fn])))
+
+#### Unzip
+
+    !unzip foldername.zip
+
+#### Folders
+
+    mkdir images
+    mv foldername images
+
+moves `foldername` into `images` folder
 
 ## tmp
 

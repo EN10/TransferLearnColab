@@ -24,9 +24,16 @@ Not Needed on Colab:
     !cd ~/example_code
     !curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
 
-## Retrain
-    python retrain.py --image_dir ~/flower_photos
+## Speedup Training 
+reduce the number of images by ~70% : 3681 -> 1668
 
+    !ls flower_photos/* | wc -l
+    !rm flower_photos/*/[3-9]*
+    !rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
+also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
+
+## Retrain
+    !python retrain.py --image_dir ~/flower_photos
     --how_many_training_steps 500
     
 692s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 90.4%    
@@ -37,15 +44,6 @@ Not Needed on Colab:
 
 * [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
 * [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
-
-## Speedup Training 
-reduce the number of images by ~70% : 3681 -> 1668
-
-    ls flower_photos/* | wc -l
-    rm flower_photos/*/[3-9]*
-also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
-
-    rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
 
 ## Download Classify File
     !curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py

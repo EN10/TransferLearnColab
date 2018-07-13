@@ -30,6 +30,7 @@ reduce the number of images by ~70% : 3681 -> 1668
     !ls flower_photos/* | wc -l
     !rm flower_photos/*/[3-9]*
     !rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
+    !ls flower_photos/* | wc -l
 also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
 
 ## Retrain

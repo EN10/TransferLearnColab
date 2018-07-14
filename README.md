@@ -8,12 +8,6 @@ This can be an much faster (in a few minutes) than training from scratch ([Incep
 
 Colab - Runtime - Change runtime type - Hardware accelerator - GPU - SAVE
 
-## Install
-Not Needed on Colab:    
-
-    pip install "tensorflow>=1.7.0"
-    pip install tensorflow-hub
-
 ## Download Flowers
     !curl -LO http://download.tensorflow.org/example_images/flower_photos.tgz
     !tar xzf flower_photos.tgz

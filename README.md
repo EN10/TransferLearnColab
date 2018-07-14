@@ -15,13 +15,10 @@ Not Needed on Colab:
     pip install tensorflow-hub
 
 ## Download Flowers
-    !cd ~
     !curl -LO http://download.tensorflow.org/example_images/flower_photos.tgz
     !tar xzf flower_photos.tgz
 
 ## Download Code
-    !mkdir ~/example_code
-    !cd ~/example_code
     !curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
 
 ## Speedup Training 

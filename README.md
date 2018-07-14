@@ -18,6 +18,11 @@ Not Needed on Colab:
     !curl -LO http://download.tensorflow.org/example_images/flower_photos.tgz
     !tar xzf flower_photos.tgz
 
+## Display Flower
+    from IPython.display import Image
+    Image(filename='flower_photos/roses/102501987_3cdb8e5394_n.jpg') 
+Tab autocomplete can be used for image names
+
 ## Download Code
     !curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
 

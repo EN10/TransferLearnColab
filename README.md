@@ -23,7 +23,7 @@ Not Needed on Colab:
     Image(filename='flower_photos/roses/102501987_3cdb8e5394_n.jpg') 
 Tab autocomplete can be used for image names
 
-## Download Code
+## Download Retrain
     !curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
 
 ## Speedup Training 
@@ -47,13 +47,13 @@ also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
 * [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
 * [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
 
-## Download Classify File
+## Download Label Image
     !curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
 
 ## Download Test Image
     !wget https://5.imimg.com/data5/AA/KK/MY-6677193/red-rose-500x500.jpg
 
-## Run Classification
+## Use the Retrained Model
     !python label_image.py \
     --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt \
     --input_layer=Placeholder \

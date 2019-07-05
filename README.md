@@ -24,11 +24,13 @@ Tab autocomplete can be used for image names
     !python retrain.py --image_dir ./flower_photos --how_many_training_steps 500
 
 Default : 4000 Steps  
-384s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 91.6%    
-500s : Colab - Python 3 - GPU -  591 images - 4000 Steps - Test 96.9%   
- 72s : Colab - Python 3 - GPU - 3681 images -  500 Steps - Test 88.6%   
- 70s : Colab - Python 3 - GPU - 1668 images -  500 Steps - Test 88.9%  
- 68s : Colab - Python 3 - GPU -  591 images -  500 Steps - Test 93.9%   
+
+---|---|---|---|---|---|
+384s | Python 3 | GPU | 3681 images | 4000 Steps | Test 91.6%    
+361s | Python 3 | GPU |  591 images | 4000 Steps | Test 95.9%   
+ 72s | Python 3 | GPU | 3681 images |  500 Steps | Test 88.6%   
+ 70s | Python 3 | GPU | 1668 images |  500 Steps | Test 88.9%  
+ 68s | Python 3 | GPU |  591 images |  500 Steps | Test 93.9%   
 
 11m22 : PaizaCloud
 

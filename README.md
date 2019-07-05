@@ -25,6 +25,7 @@ Tab autocomplete can be used for image names
 
 Default : 4000 Steps  
 
+Time|Python|Runtime|Images|Steps|Test Accuracy
 ---|---|---|---|---|---|
 384s | Python 3 | GPU | 3681 images | 4000 Steps | Test 91.6%    
 361s | Python 3 | GPU |  591 images | 4000 Steps | Test 95.9%   

@@ -3,7 +3,7 @@
 Retraining one of Google's CNN image classification models to new categories using Transfer Learning.
 This can be an much faster (in a few minutes) than training from scratch ([Inception V3](https://github.com/EN10/KerasInception) took Google, 2 weeks).
 
-* Based on [Tensoflow Hub Retrain](https://github.com/tensorflow/hub/blob/master/docs/tutorials/image_retraining.md) (updated 10 Jul 2018)    
+* Based on [Tensoflow Hub Retrain](https://github.com/tensorflow/hub/blob/master/docs/tutorials/image_retraining.md) (updated 10 May 2019)    
 * Originally based on [Tensorflow for Poets](https://github.com/EN10/TensorFlowForPoets)
 
 Colab - Runtime - Change runtime type - Hardware accelerator - GPU - SAVE
@@ -31,8 +31,9 @@ also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
 
 ## Retrain
     !python retrain.py --image_dir ./flower_photos --how_many_training_steps 500
-    
-692s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 90.4%    
+
+Default 4000 Steps  
+384s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 91.6%    
 135s : Colab - Python 3 - GPU - 3681 images - 500 Steps - Test 90.4%  
 500s : Colab - Python 3 - GPU - 591 images - 4000 Steps - Test 96.9%    
 131s : Colab - Python 3 - GPU - 591 images - 500 Steps - Test 96.9%

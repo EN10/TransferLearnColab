@@ -20,7 +20,22 @@ Tab autocomplete can be used for image names
 ## Download Retrain
     !curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
 
-## Speedup Training 
+## Retrain
+    !python retrain.py --image_dir ./flower_photos --how_many_training_steps 500
+
+Default : 4000 Steps  
+384s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 91.6%    
+500s : Colab - Python 3 - GPU -  591 images - 4000 Steps - Test 96.9%   
+ 72s : Colab - Python 3 - GPU - 3681 images -  500 Steps - Test 88.6%   
+ 70s : Colab - Python 3 - GPU - 1668 images -  500 Steps - Test 88.9%  
+ 68s : Colab - Python 3 - GPU -  591 images -  500 Steps - Test 93.9%   
+
+11m22 : PaizaCloud
+
+* [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
+* [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
+
+### Speedup Training 
 reduce the number of images by ~70% : 3681 -> 1668
 
     !ls flower_photos/* | wc -l
@@ -28,20 +43,6 @@ reduce the number of images by ~70% : 3681 -> 1668
     !rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
     !ls flower_photos/* | wc -l
 also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
-
-## Retrain
-    !python retrain.py --image_dir ./flower_photos --how_many_training_steps 500
-
-Default 4000 Steps  
-384s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 91.6%    
-135s : Colab - Python 3 - GPU - 3681 images - 500 Steps - Test 90.4%  
-500s : Colab - Python 3 - GPU - 591 images - 4000 Steps - Test 96.9%    
-131s : Colab - Python 3 - GPU - 591 images - 500 Steps - Test 96.9%
-
-11m22 : PaizaCloud
-
-* [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
-* [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
 
 ## Download Label Image
     !curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py

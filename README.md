@@ -89,3 +89,13 @@ moves `foldername` into `images` folder
 ## tmp
 
 bottlenecks, graph & model in `/tmp`
+
+### Label Image with Inception & Imagenet
+
+    !curl -LO https://storage.googleapis.com/download.tensorflow.org/models/inception_v3_2016_08_28_frozen.pb.tar.gz
+    !tar -xvzf inception_v3_2016_08_28_frozen.pb.tar.gz
+    !curl -LO https://raw.githubusercontent.com/EN10/SimpleInception/master/5918348-image.jpg
+        
+    !python label_image.py \
+    --graph=inception_v3_2016_08_28_frozen.pb --labels=imagenet_slim_labels.txt \
+    --image=5918348-image.jpg

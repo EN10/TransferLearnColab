@@ -33,7 +33,7 @@ Execute Time|Python|Runtime|Images|Steps|Test Accuracy
  70s | 3 | GPU | 1668 |  500 | 88.9%  
  68s | 3 | GPU |  591 |  500 | 93.9%   
 
-`!nvidia-smi`   Tesla T4
+`!nvidia-smi`   GPU = Tesla T4
 
 * [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
 * [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)

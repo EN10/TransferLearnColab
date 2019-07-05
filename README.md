@@ -33,6 +33,7 @@ also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
     !python retrain.py --image_dir ./flower_photos --how_many_training_steps 500
     
 692s : Colab - Python 3 - GPU - 3681 images - 4000 Steps - Test 90.4%    
+135s : Colab - Python 3 - GPU - 3681 images - 500 Steps - Test 90.4%  
 500s : Colab - Python 3 - GPU - 591 images - 4000 Steps - Test 96.9%    
 131s : Colab - Python 3 - GPU - 591 images - 500 Steps - Test 96.9%
 

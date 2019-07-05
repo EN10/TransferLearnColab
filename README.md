@@ -25,13 +25,13 @@ Tab autocomplete can be used for image names
 
 Default : 4000 Steps  
 
-Time|Python|Runtime|Images|Steps|Test Accuracy
+Execute Time|Python|Runtime|Images|Steps|Test Accuracy
 ---|---|---|---|---|---|
-384s | Python 3 | GPU | 3681 images | 4000 Steps | Test 91.6%    
-361s | Python 3 | GPU |  591 images | 4000 Steps | Test 95.9%   
- 72s | Python 3 | GPU | 3681 images |  500 Steps | Test 88.6%   
- 70s | Python 3 | GPU | 1668 images |  500 Steps | Test 88.9%  
- 68s | Python 3 | GPU |  591 images |  500 Steps | Test 93.9%   
+384s | 3 | GPU | 3681 | 4000 | 91.6%    
+361s | 3 | GPU |  591 | 4000 | 95.9%   
+ 72s | 3 | GPU | 3681 |  500 | 88.6%   
+ 70s | 3 | GPU | 1668 |  500 | 88.9%  
+ 68s | 3 | GPU |  591 |  500 | 93.9%   
 
 11m22 : PaizaCloud
 

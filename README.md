@@ -39,7 +39,7 @@ Execute Time|Python|Runtime|Images|Steps|Test Accuracy
 * [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
 
 ### Speedup Training 
-number of images doesn't seem to have a large impact on the Tesla T4 GPU
+number of images doesn't seem to have a large impact on the Tesla T4 GPU    
 reduce the number of images by ~70% : 3681 -> 1668
 
     !ls flower_photos/* | wc -l

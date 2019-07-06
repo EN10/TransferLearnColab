@@ -62,6 +62,8 @@ also only use 2 flowers e.g. roses and sunflowers : 1668 -> 591
     --image=red-rose-500x500.jpg \
     2>stderr
 
+2>stderr : stderr output to file
+
 ## [Training on Your Own Categories](https://github.com/EN10/TensorFlowForPoets#training-on-your-own-categories)
 
 images to colab: download images, rename folder, zip, upload, unzip, mkdir, mv   

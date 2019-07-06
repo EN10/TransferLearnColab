@@ -1,6 +1,6 @@
 # Transfer Learn Colab
 
-Retraining one of Google's CNN image classification models to new categories using Transfer Learning.
+Retraining one of Google's CNN image classification models to new categories using Transfer Learning.   
 This can be an much faster (in a few minutes) than training from scratch ([Inception V3](https://github.com/EN10/KerasInception) took Google, 2 weeks).
 
 * Based on [Tensoflow Hub Retrain](https://github.com/tensorflow/hub/blob/master/docs/tutorials/image_retraining.md) (updated 10 May 2019)    

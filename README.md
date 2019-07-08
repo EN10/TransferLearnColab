@@ -27,13 +27,14 @@ Default : 4000 Steps
 
 Execute Time|Python|Runtime|Images|Steps|Test Accuracy
 ---|---|---|---|---|---|
-384s | 3 | GPU | 3681 | 4000 | 91.6%    
-361s | 3 | GPU |  591 | 4000 | 95.9%   
- 72s | 3 | GPU | 3681 |  500 | 88.6%   
- 70s | 3 | GPU | 1668 |  500 | 88.9%  
- 68s | 3 | GPU |  591 |  500 | 93.9%   
+384s | 3 | GPU T4 | 3681 | 4000 | 91.6%    
+361s | 3 | GPU T4 |  591 | 4000 | 95.9%   
+ 72s | 3 | GPU T4 | 3681 |  500 | 88.6%   
+ 70s | 3 | GPU T4 | 1668 |  500 | 88.9%  
+ 68s | 3 | GPU T4 |  591 |  500 | 93.9%   
 
-`!nvidia-smi`   GPU = Tesla T4
+`!nvidia-smi`   GPU = Tesla T4  
+Tesla K80 is a slower GPU, can be changed by Restart runtime    
 
 * [Pre-trained Models ](https://github.com/tensorflow/models/blob/master/research/slim/README.md#pre-trained-models)
 * [Comparision](https://1.bp.blogspot.com/-E1qM-CKq-BA/WfuGc22fPBI/AAAAAAAACIg/frpwbO5Jh-oL0cSObyJa29fXkBsuVl7CACLcBGAs/s1600/image3.jpg)
